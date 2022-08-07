@@ -26,7 +26,7 @@ export function Hero(){
               </div>
             </div>
             
-            <img src="/images/jeffersonbrito.svg" alt="" />
+            <img src="/images/jeffersonbrito.png" alt="" />
         </div>
         : <div className={styles.heroContentDesktop}>
             <div className={styles.ContentDesktop}>
@@ -41,7 +41,7 @@ export function Hero(){
               <span className={styles.frontendDesktop}>Front-end</span>
               <a className={styles.aboutMe} href="#">About Me</a>
             </div>
-            <img src="/images/jeffersonbrito.svg" alt="" />
+            <img src="/images/jeffersonbrito.png" alt="" />
         </div>
        }
     </section>
