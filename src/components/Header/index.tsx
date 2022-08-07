@@ -6,6 +6,7 @@ import {FiX} from 'react-icons/fi'
 import styles from './styles.module.scss';
 import { Drawer } from '../Drawer';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export function Header(){
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -49,10 +50,18 @@ export function Header(){
           
           ): (
           <nav>
-            <a href="" className={styles.active}>Home</a>
-            <a href="">Projects</a>
-            <a href="">Posts</a>
-            <a href="">Playlists</a>
+           <Link href="/">
+            <a className={styles.active}>Home</a>
+          </Link>
+          <Link href="#">
+            <a>Projects</a>
+          </Link>
+          <Link href="#" >
+            <a>Posts</a>
+          </Link>
+          <Link href="#">
+            <a>Playlists</a>
+          </Link>
             <a href="#footerContact">Contact</a>
           </nav>
           )

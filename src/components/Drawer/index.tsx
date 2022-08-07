@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './styles.module.scss';
 
 interface DrawerProps {
@@ -8,10 +9,18 @@ export function Drawer({onClose}:DrawerProps) {
   return (
     <>
       <nav className={styles.drawer}>
-        <a href="/home" className={styles.active} onClick={onClose}>Home</a>
-        <a href="#" onClick={onClose}>Projects</a>
-        <a href="#" onClick={onClose}>Posts</a>
-        <a href="#" onClick={onClose}>Playlists</a>
+        <Link href="/">
+          <a className={styles.active} onClick={onClose}>Home</a>
+        </Link>
+        <Link href="#">
+          <a onClick={onClose}>Projects</a>
+        </Link>
+        <Link href="#" >
+          <a onClick={onClose}>Posts</a>
+        </Link>
+        <Link href="#">
+          <a onClick={onClose}>Playlists</a>
+        </Link>
         <a href="#footerContact" onClick={onClose}>Contact</a>
       </nav>
     </>
