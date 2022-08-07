@@ -1,0 +1,124 @@
+.heroContainer{
+  padding: 1.5rem;
+  max-width: 1120px;
+  width: 100vw;
+
+  .heroContentMobile{
+    display: flex;
+    align-items: center;
+
+    .ContentMobile{
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        font-weight: semibold;
+      }
+      h1 {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+        margin: 0.55rem 0;
+      }
+      p{
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        font-weight: semibold;
+      }
+      .frontend{
+        background: var(--yellow-500);
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        border-radius: 28px;
+        margin-top: 1rem;
+        width: 120px;
+      }
+
+      .aboutMe{
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+
+        margin-top: 7.7rem;
+        border: 1px solid var(--yellow-500);
+      
+        border-radius: 28px;
+        padding: 0.5rem 1rem;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    img {
+      width: 208px;
+      height: 281px;
+      position: absolute;
+      right: 1.5rem;
+      top: 7.5rem;
+    }
+  }
+
+  .heroContentDesktop{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    .ContentDesktop{
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      margin-right: 1rem;
+
+      span {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: semibold;
+      }
+
+      h1 {
+        font-size: 2.75rem;
+        line-height: 2.75rem;
+        margin: 0.55rem 0;
+      }
+
+      p{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: semibold;
+      }
+    
+      .frontendDesktop{
+        background: var(--yellow-500);
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        border-radius: 28px;
+
+        margin-top: 1rem;
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .aboutMe{
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+
+        margin-top: 7.7rem;
+        border: 1px solid var(--yellow-500);
+      
+        border-radius: 28px;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+
+    img {
+      margin-top: 0.5rem;
+    }
+  }
+}
