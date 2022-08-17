@@ -7,6 +7,7 @@ import styles from './styles.module.scss';
 import { Drawer } from '../Drawer';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { ActiveLink } from './ActiveLink';
 
 export function Header(){
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -50,18 +51,21 @@ export function Header(){
           
           ): (
           <nav>
-           <Link href="/">
-            <a className={styles.active}>Home</a>
-          </Link>
-          <Link href="#">
+           <ActiveLink href="/" activeClassName={styles.active}>
+            <a>Home</a>
+          </ActiveLink>
+           <ActiveLink href="/Resume" activeClassName={styles.active}>
+            <a>Resume</a>
+          </ActiveLink>
+          <ActiveLink href="/Projects" activeClassName={styles.active}>
             <a>Projects</a>
-          </Link>
-          <Link href="#" >
+          </ActiveLink>
+          <ActiveLink href="/Posts" activeClassName={styles.active}>
             <a>Posts</a>
-          </Link>
-          <Link href="#">
+          </ActiveLink>
+          <ActiveLink href="/Playlists" activeClassName={styles.active}>
             <a>Playlists</a>
-          </Link>
+          </ActiveLink >
             <a href="#footerContact">Contact</a>
           </nav>
           )

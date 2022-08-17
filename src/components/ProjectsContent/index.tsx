@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './styles.module.scss'
 
 export function Projects() {
@@ -12,7 +13,9 @@ export function Projects() {
           <div className={styles.project}></div>
         </div>
         <div className={styles.linkGithub}>
-          <a href="#">See more on Github</a>
+          <Link href="/Projects">
+            <a >See more Projects</a>
+          </Link>
         </div>
       </div>
     </section>

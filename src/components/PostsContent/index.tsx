@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useBreakpoint } from '../../hooks/useBreakpoint';
 import styles from './styles.module.scss'
 
@@ -22,9 +23,9 @@ export function PostsContent() {
         </p>
         {
           !isMobile && 
-          <button type="button">
-            Check now
-          </button>
+          <Link href="/Posts">
+            <a> Check now</a>
+          </Link>
         }
       </div>
         {
@@ -33,9 +34,9 @@ export function PostsContent() {
         }
       {
         isMobile && 
-        <button type="button">
-          Check now
-        </button>
+        <Link href="/Posts">
+          <a> Check now</a>
+        </Link>
       }
     </section>
   )

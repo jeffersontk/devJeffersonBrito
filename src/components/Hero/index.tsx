@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useBreakpoint } from "../../hooks/useBreakpoint";
 import styles from './styles.module.scss';
 
@@ -22,7 +23,9 @@ export function Hero(){
               </p>
               <span className={styles.frontend}>Front-end</span>
               <div className={styles.aboutMe}>
-                <a href="#">About Me</a>
+                <Link href="/Resume">
+                  <a>About Me</a>
+                </Link>
               </div>
             </div>
             
@@ -39,7 +42,11 @@ export function Hero(){
               specialized in
               </p>
               <span className={styles.frontendDesktop}>Front-end</span>
-              <a className={styles.aboutMe} href="#">About Me</a>
+              <div className={styles.aboutMe}>
+                <Link href="/Resume">
+                  <a>About Me</a>
+                </Link>
+              </div>
             </div>
             <img src="/images/jeffersonbrito.png" alt="" />
         </div>

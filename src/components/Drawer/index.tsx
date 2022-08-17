@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ActiveLink } from '../Header/ActiveLink';
 import styles from './styles.module.scss';
 
 interface DrawerProps {
@@ -9,18 +10,21 @@ export function Drawer({onClose}:DrawerProps) {
   return (
     <>
       <nav className={styles.drawer}>
-        <Link href="/">
-          <a className={styles.active} onClick={onClose}>Home</a>
-        </Link>
-        <Link href="#">
+        <ActiveLink href="/" activeClassName={styles.active}>
+          <a onClick={onClose}>Home</a>
+        </ActiveLink>
+        <ActiveLink href="/Resume" activeClassName={styles.active}>
+          <a onClick={onClose}>Resume</a>
+        </ActiveLink>
+        <ActiveLink href="/Projects" activeClassName={styles.active}>
           <a onClick={onClose}>Projects</a>
-        </Link>
-        <Link href="#" >
+        </ActiveLink>
+        <ActiveLink href="/Posts" activeClassName={styles.active}>
           <a onClick={onClose}>Posts</a>
-        </Link>
-        <Link href="#">
+        </ActiveLink>
+        <ActiveLink href="/Playlists" activeClassName={styles.active}>
           <a onClick={onClose}>Playlists</a>
-        </Link>
+        </ActiveLink>
         <a href="#footerContact" onClick={onClose}>Contact</a>
       </nav>
     </>
