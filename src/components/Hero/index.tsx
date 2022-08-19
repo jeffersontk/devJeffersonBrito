@@ -38,10 +38,10 @@ export function Hero(){
                 Jefferson Brito
               </h1>
               <p>
-              I am a Software engineer <br />
-              specialized in
+              I am a Software engineer <br/>
+              <span className={styles.textContent} >specialized in <span className={styles.frontendDesktop}>Front-end</span></span>
+              
               </p>
-              <span className={styles.frontendDesktop}>Front-end</span>
               <div className={styles.aboutMe}>
                 <Link href="/Resume">
                   <a>About Me</a>

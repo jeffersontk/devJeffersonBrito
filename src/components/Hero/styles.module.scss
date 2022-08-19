@@ -68,7 +68,6 @@
       display: flex;
       flex-direction: column;
       padding-top: 1rem;
-      margin-right: 1rem;
 
       span {
         font-size: 1.5rem;
@@ -86,18 +85,24 @@
         font-size: 1.5rem;
         line-height: 1.5rem;
         font-weight: semibold;
+
+        .textContent{
+          display: flex;
+          align-items: center;
+          gap: 0.875rem;
+          margin-top: 0.5rem;
+        }
       }
     
       .frontendDesktop{
         background: var(--yellow-500);
         padding: 0.5rem 1rem;
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
         border-radius: 28px;
+        width: 200px;
+        height: 40px;
 
-        margin-top: 1rem;
-        width: 250px;
-        height: 50px;
         display: flex;
         justify-content: center;
       }
