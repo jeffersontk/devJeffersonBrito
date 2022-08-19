@@ -1,0 +1,66 @@
+.mainContainer{
+  display: flex;
+  justify-content: center;
+}
+.cover {
+  background-image: url("/images/Cover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 296px;
+  border-radius: 0 0 8px 8px;
+}
+.content{
+  max-width: 1120px;
+  width: 100vw;
+
+  header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    margin-top: -148px;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      margin-right: 1.5rem;
+    }
+    h1{
+      color: var(--gray-100);
+    }
+    h3{
+      font-weight: 500 !important;
+      color: var(--gray-100);
+      margin-top: 0.35rem;
+      margin-bottom: 0.35rem;
+    }
+    h5{
+      font-weight: 400 !important;
+      color: var(--gray-300);
+    }
+    .contentHeaderIconContainer{
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+      margin-top: 0.875rem;
+      margin-bottom: 5rem;
+      
+     
+      
+      span{
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+    }
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}

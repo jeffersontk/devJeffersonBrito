@@ -28,7 +28,7 @@ export function Hero(){
                 </Link>
               </div>
             </div>
-            
+            <img src="/image/bg.svg" alt="" />
             <img src="/images/jeffersonbrito.png" alt="" />
         </div>
         : <div className={styles.heroContentDesktop}>
@@ -48,6 +48,7 @@ export function Hero(){
                 </Link>
               </div>
             </div>
+            <img src="/image/bg.svg" alt="" />
             <img src="/images/jeffersonbrito.png" alt="" />
         </div>
        }
