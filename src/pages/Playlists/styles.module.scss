@@ -1,0 +1,24 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+  .content {
+    max-width: 1120px;
+    width: 100%;
+    padding: 2rem 0;
+   
+    .container{
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      
+      .contentPlayer{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+    
+  }
+}
