@@ -13,7 +13,7 @@ export default function Player () {
         </div>
         <div className={styles.buttonContainer}>
           <a href="#" className={styles.buttonYoutube}><BsYoutube />Visitar Canal</a>
-          <a href="#" className={styles.buttonDiscord}><SiDiscord />Nossa comunidade no Discord</a>
+          <a href="#" className={styles.buttonDiscord}><SiDiscord />Comunidade no Discord</a>
         </div>
       </div>
     </section>
