@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AiFillFacebook, AiFillGoogleSquare, AiFillLike } from 'react-icons/ai'
+import { AiFillFacebook, AiFillGoogleSquare, AiFillLike, AiOutlineSend } from 'react-icons/ai'
 import { FaGithubSquare} from 'react-icons/fa'
 import styles from './styles.module.scss'
 
@@ -37,7 +37,10 @@ export default function Comments () {
           isLogin && 
             <div className={styles.commentInput}>
               <div className={styles.avatar}></div>
-              <input type="text"  placeholder='Add a comment'/>
+              <div className={styles.inputContainer}>
+                <input type="text"  placeholder='Add a comment'/>
+                <AiOutlineSend />
+              </div>
             </div>
         }
         <div className={styles.commentList}>
