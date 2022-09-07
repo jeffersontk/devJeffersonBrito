@@ -17,8 +17,6 @@
   header{
     width: 100%;
     display: flex;
-    align-items: center;
-    padding-left: 2rem;
     margin-top: -148px;
 
     img {
@@ -27,27 +25,30 @@
       border-radius: 8px;
       margin-right: 1.5rem;
     }
-    h1{
-      color: var(--gray-100);
-    }
-    h3{
-      font-weight: 500 !important;
-      color: var(--gray-100);
-      margin-top: 0.35rem;
-      margin-bottom: 0.35rem;
-    }
-    h5{
-      font-weight: 400 !important;
-      color: var(--gray-300);
+    .ResumeContentHeader{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.375rem;
+
+      h1{
+        color: var(--gray-100);
+      }
+      h3{
+        font-weight: 500 !important;
+        color: var(--gray-100);
+      }
+      h5{
+        font-weight: 400 !important;
+        color: var(--gray-300);
+      }
     }
     .contentHeaderIconContainer{
       display: flex;
       align-items: center;
       gap: 0.875rem;
-      margin-top: 0.875rem;
-      margin-bottom: 5rem;
-      
-     
+      margin-top: 0.475rem;
       
       span{
         display: flex;
@@ -63,5 +64,52 @@
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
+  }
+}
+
+
+@media (max-width: 768px){
+  .cover{
+    background-position: left;
+    height: 206px;
+  }
+
+  .content {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -108px;
+      gap: 1rem;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      
+
+      .ResumeContentHeader{
+        padding: 0 2rem;
+        
+        h1{
+          font-size: 1.75rem;
+        }
+        h3{
+          font-size: 1.25rem;
+        }
+        h5{
+          font-size: 1rem;
+        }
+      }
+      .contentHeaderIconContainer{
+
+      }
+    }
+    article{
+      padding: 0 2rem;
+      
+      p{
+        font-size: 1rem;
+      }
+    }
   }
 }
