@@ -4,10 +4,10 @@ import { FaGithubSquare} from 'react-icons/fa'
 import styles from './styles.module.scss'
 
 export default function Comments () {
-  const [isLogin, setIsLogin] = useState(false)
+  const [isLogin, setIsLogin] = useState(true)
   return(
     <section className={styles.container}>
-      {!isLogin && 
+     {/*  {!isLogin && 
         <div className={styles.loginContainer}>
           <h3>login and leave a comment</h3>
           <div className={styles.buttonContainer}>
@@ -31,12 +31,14 @@ export default function Comments () {
             </button>
           </div>
         </div>
-      }
+      } */}
       <div className={styles.commentContainer}>
         {
           isLogin && 
             <div className={styles.commentInput}>
-              <div className={styles.avatar}></div>
+              <div className={styles.inputContainer}>
+                <input type="text"  placeholder='@GithubUser'/>
+              </div>
               <div className={styles.inputContainer}>
                 <input type="text"  placeholder='Add a comment'/>
                 <AiOutlineSend />

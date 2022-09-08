@@ -51,24 +51,17 @@
 }
 
 .commentContainer{
-  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
   .commentInput{
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     gap: 1rem;
-
-    .avatar{
-      width: 60px;
-      height: 50px;
-      border-radius: 4px;
-      background-color: var(--gray-900);
-    }
+    
     .inputContainer {
-      width: 100%;
       height: 40px;
       padding: 0 0.5rem;
       border-bottom: 1px solid var(--gray-500);
@@ -141,6 +134,19 @@
           font-size: 1rem;
           color: var(--gray-100);
         }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px){
+  .commentContainer{
+    .commentInput{
+      display: flex;
+      flex-direction: column;
+      .inputContainer{
+        width: 100%;
       }
     }
   }

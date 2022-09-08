@@ -1,8 +1,17 @@
+import { useBreakpoint } from '../../../hooks/useBreakpoint';
 import styles from './styles.module.scss'
 
 export default function SidebarPlaylists () {
+  const breakpoint = useBreakpoint();
+  
+  const isMobile = breakpoint === 'xs'
+  
   return(
-    <aside className={styles.asideContainer}>
+    <aside
+      className={isMobile 
+        ? `${styles.asideContainerMobile}` 
+        : `${styles.asideContainer}`}
+      >
       <header className={styles.contentHeader}>
         <label htmlFor="level">Select your level
           <select name="level" id="level">

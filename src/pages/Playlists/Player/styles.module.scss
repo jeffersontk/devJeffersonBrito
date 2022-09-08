@@ -79,3 +79,22 @@
     }
   }
 }
+
+@media (max-width: 768px){
+  .container {
+    padding-top: 2rem;
+    .playerContainer {
+      height: 30vh;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      .textContainer{
+        width: 100%;
+      }
+      .buttonContainer {
+        width: 100%;
+      }
+    }
+  }
+}
